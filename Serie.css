@@ -1,0 +1,72 @@
+.carousel {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+
+#carousel-1,
+#carousel-2 {
+    position: relative;
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: mandatory;
+    width: 1300px;
+    gap: 10px;
+    scroll-behavior: smooth;
+}
+
+.image {
+    scroll-snap-align: start;
+}
+
+#chevron-right {
+    align-self: center;
+    position: absolute;
+    top: 35%;
+    left: 96%;
+    
+}
+
+#chevron-left {
+    align-self: center;
+    position: absolute;
+    top: 35%;
+    right: 78%;
+}
+
+/* Carousel 1 */
+/* Par défault on cache le bouton de gauche */
+#carousel-1-chevron-left-clic {
+    display: none;
+}
+
+/* Quand on clique sur le bouton a droite du carousel 1 , on affiche celui de gauche */
+#img5-carousel-1:target ~ #carousel-1-chevron-left-clic {
+    display: block;
+}
+
+/* Ensuite on display none celui de droite , car on a cliqué dessus */
+#img5-carousel-1:target ~ #carousel-1-chevron-right-clic {
+    display: none;
+}
+/* ---------------------------------------------------------------------------------- */
+
+/* Carousel 2 */
+/* Par défault on cache le bouton de gauche */
+#carousel-2-chevron-left-clic {
+    display: none;
+}
+
+/* Quand on clique sur le bouton a droite du carousel 2 , on affiche celui de gauche */
+#img5-carousel-2:target ~ #carousel-2-chevron-left-clic {
+    display: block;
+}
+
+/* Ensuite on display none celui de droite , car on a cliqué dessus */
+#img5-carousel-2:target ~ #carousel-2-chevron-right-clic {
+    display: none;
+}
