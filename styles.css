@@ -27,6 +27,7 @@ header {
     align-items: center;
     max-height: 118px;
     justify-content: space-between;
+    margin: 10px 20px;
     
 }
 
@@ -75,12 +76,12 @@ div.logo {
 .search-contact {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
 }
 
 .bell-notification {
-    width: 35px;
-    height: 40px;
+    
+
 }
 
 div.user-icon {
@@ -99,8 +100,6 @@ main {
 .bloc-1 {
     background-image: url(./pictures/affiches/en_avant.png);
     background-repeat: no-repeat;
-    width: 100%;
-    height: 790px;
     padding: 50px 50px;
 }
 

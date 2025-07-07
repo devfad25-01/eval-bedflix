@@ -7,14 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <header> <!-- Header section with logo, navigation, search input, and a link -->
+    <header role="banner"> <!-- Header section with logo, navigation, search input, and a link -->
         <div class="logo-navbar">
             <div class="logo">
                 <a href="#">
                     <img src="./pictures/navbar/logo/bedflix-logo.png" alt="#">
                 </a>
             </div>
-            <nav class="navbar">
+            <nav class="navbar" role="navigation">
                 <ul>
                     <li>Accueil</li>
                     <li>Séries</li>
@@ -24,7 +24,7 @@
         </div>
         <div class="search-contact">
             <div class="searchbar">
-                <input type="search" placeholder="    Titres, genres, ...">
+                <input type="search" placeholder="    Titres, genres, ..." role="search">
             </div>
             <div class="bell-notification">
                 <a href="#"><img src="./pictures/icons/bell-solid.svg" alt="notification"></a>
@@ -36,8 +36,8 @@
             </div>
         </div>
     </header>
-    <main> <!-- Main section with two subsections -->
-        <section class="bloc-1">
+    <main role="main"> <!-- Main section with two subsections -->
+        <section class="bloc-1" role="region">
             <div class="logo-text">
                 <img src="./pictures/navbar/logo/bedflix_mini_logo.svg" alt="mini_logo">
                 <p>Série</p>
@@ -49,27 +49,17 @@
                     <p>consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue</p>
                 </div>
             </div>
-            
         </section>
-        <section class="bloc-2">
-            <a href=""></a>
-            <div>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-            </div>
-        </section>
+
     </main>
-    <footer> <!-- Footer section with four divs and a link -->
+    <footer role="contentinfo"> <!-- Footer section with four divs and a link -->
         <div>
             <div></div>
             <div></div>
             <div></div>
             <div></div>
         </div>
-        <a href=""></a>
+        <a href="#"></a>
     </footer>
 </body>
 </html>
