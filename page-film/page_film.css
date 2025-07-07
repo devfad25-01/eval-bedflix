@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+}
+
+/* Disposition du header */
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 12px;
+    max-width: auto;
+}
+
+/* Modification de style, nav menu */
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* Rend les élément en rouge quand la souris vien sur les lien hypertext */
+a:hover {
+    color: red;
+}
+
+/* Disposition de la searchbar  */
+.searchbar {
+    border: solid 2px white;
+    outline: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    width: 280px;
+    padding: 8px 12px 8px 40px;
+    margin-left: 350px;
+    margin-right: 100px;
+}
+
+#notif {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 100px;
+}
+
+#profil {
+    margin-left: 10px;
+}
