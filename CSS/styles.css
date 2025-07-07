@@ -1,0 +1,19 @@
+/* Réinitialisation minimale */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body plein écran */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Bloc .hero occupant tout l'écran avec image en background */
+.hero {
+  width: 100%;                                           /* 100% de la largeur du conteneur */
+  height: 100vh;                                         /* 100% de la hauteur de la fenêtre */
+  background: url('../images/WestWorld.png') center/cover no-repeat; /* Image couvrant tout le bloc */
+}
