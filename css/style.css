@@ -1,0 +1,374 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+header {
+    background: var(--tertiary-color);
+    padding: 20px 0 0 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+}
+
+.logo img {
+    height: 48px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.banner {
+    background: linear-gradient(45deg, var(--tertiary-color) 2%, rgba(20, 20, 20, 0.2)), url('assets/posters/banner.png') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0;
+}
+
+.banner-content {
+    margin-left: 60px;
+    max-width: 500px;
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.banner-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    background: var(--secondary-color);
+    color: var(--tertiary-color);
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.btn-secondary {
+    background: rgba(109, 109, 110, 0.7);
+    color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto 0 auto;
+    padding: 0 30px;
+}
+
+.category {
+    margin-bottom: 40px;
+}
+
+.category h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.row::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 320px;
+    max-width: 340px;
+    height: 180px;
+    background: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.card img:not(.b-logo) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card span {
+    position: relative;
+    z-index: 2;
+    background: rgba(20, 20, 20, 0.7);
+    width: 100%;
+    text-align: center;
+    padding: 8px 0 6px 0;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.card:hover img+img {
+    transform: scale(1.07);
+    box-shadow: 0 4px 16px rgba(229, 9, 20, 0.3);
+}
+
+footer {
+    background: #181818;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: start;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+
+    .navbar,
+    main,
+    .footer-content {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .banner-content {
+        margin-left: 20px;
+    }
+
+    .row {
+        gap: 10px;
+    }
+
+    .card {
+        min-width: 220px;
+        max-width: 240px;
+        height: 120px;
+    }
+
+    .logo img {
+        height: 32px !important;
+    }
+
+    .b-logo {
+        width: 22px;
+        height: 22px;
+        top: 5px;
+        left: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .banner {
+        height: 220px;
+        background-position: center center;
+        padding: 0;
+    }
+
+    .banner-content {
+        margin-left: 0;
+        max-width: 100%;
+        text-align: center;
+        padding: 0 5px;
+    }
+
+    .banner-content h1 {
+        font-size: 1.3rem;
+    }
+
+    .banner-content p {
+        font-size: 0.9rem;
+    }
+
+    .row {
+        gap: 7px;
+    }
+
+    .card {
+        min-width: 140px;
+        max-width: 160px;
+        height: 80px;
+    }
+
+    .card span {
+        font-size: 0.8rem;
+        padding: 5px 0 4px 0;
+    }
+
+    .footer-links {
+        gap: 10px;
+    }
+
+    .logo img {
+        height: 24px !important;
+    }
+
+    .banner-buttons {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .btn,
+    .btn-secondary {
+        padding: 8px 12px;
+        font-size: 0.95rem;
+    }
+
+    main {
+        padding: 0 2px;
+    }
+
+    .category h2 {
+        font-size: 1.1rem;
+    }
+
+    .b-logo {
+        width: 16px;
+        height: 16px;
+        top: 3px;
+        left: 3px;
+    }
+}
+
+.skip-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 12px 24px;
+    z-index: 1000;
+    font-weight: bold;
+    border-radius: 0 0 8px 0;
+    transform: translateY(-120%);
+    transition: transform 0.2s;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+    outline: 3px solid var(--secondary-color);
+}
+
+/* Focus visible pour tous les liens et boutons */
+a:focus,
+.btn:focus,
+button:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.3);
+}
+
+.b-logo {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 32px;
+    height: 32px;
+    z-index: 10;
+}
+
+.b-logo-serie {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: auto;
+    height: 75px;
+    z-index: 10;
+}
+
+.footer-socials {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-socials a:hover {
+    color: var(--primary-color);
+}
+
+.social-link {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
