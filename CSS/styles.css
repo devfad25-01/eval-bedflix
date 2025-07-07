@@ -53,6 +53,16 @@ div.logo {
     font-size: 30px;
 }
 
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    color: red;
+    text-decoration: none;
+}
+
 .searchbar {
     width: 373px;
     height: 58px;
