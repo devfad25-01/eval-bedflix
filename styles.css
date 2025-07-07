@@ -1,0 +1,68 @@
+body{
+    background-color: black ;
+}
+
+h2{
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*container des images du caroussel*/
+#contenair_caroussel_3{
+    display: flex;
+    height: 190px;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*margin entre les images du caroussel*/
+#contenair_caroussel_3>a{
+    margin: 10px;
+}
+
+/*définition du bouton du caroussel*/
+#bouton3{
+    display: flex;
+    border: 0;
+    font-size: xx-large;
+    color: lightgray;
+    background-color: rgba(0, 0, 0, 0.452);
+    align-self: center;
+    position: absolute;
+    right: 0;
+    border-radius: 100%;
+}
+
+/* caroussel3 bouton + images*/
+#caroussel3{
+    display: flex;
+    bottom: 10px;
+    margin-left: 30px;
+
+}
+
+/*action pour faire tourner le caroussel*/
+#bouton3:focus ~ #contenair_caroussel_3{
+transform: translateX(-290px);
+overflow: visible;
+}
+
+/*bouton du caroussel*/
+#bouton3:focus{
+    z-index: 1;;
+}
+
+
+
+
+
+
+
+
+
+
