@@ -11,9 +11,16 @@
 <body>
     <header>
         <div class="left-section">
-            <img class="logo" src="./image/Logo.png" alt="">
+            <img class="logo" src="./image/Logo.png" alt="BEDFLIX">
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <nav>
-                <ul class="navbar">
+                <ul class="navbar" id="navbar">
                     <li><a href="#" class="active font-nav">Accueil</a></li>
                     <li><a href="#" class="font-nav">Séries</a></li>
                     <li><a href="#" class="font-nav">Films</a></li>
@@ -24,12 +31,33 @@
         <div class="right-section">
             <div class="search-container">
                 <input type="text" class="search-input" placeholder="Titre, genres, ...">
-                <span class="search-icon"><a href="" class="remove-icon">🔍</a></span>
+                <span class="search-icon"><a href="#" class="remove-icon">🔍</a></span>
             </div>
-            <div class="notification-icon"><a href="" class="remove-icon">🔔</a></div>
+            <div class="notification-icon"><a href="#" class="remove-icon">🔔</a></div>
             <div class="profile-avatar">U</div>
         </div>
     </header>
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.getElementById('navbar');
+            const menuToggle = document.querySelector('.menu-toggle');
+
+            navbar.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+
+        // Fermer le menu si on clique ailleurs
+        document.addEventListener('click', function (event) {
+            const navbar = document.getElementById('navbar');
+            const menuToggle = document.querySelector('.menu-toggle');
+
+            if (!event.target.closest('.left-section')) {
+                navbar.classList.remove('active');
+                menuToggle.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 
 </html>
