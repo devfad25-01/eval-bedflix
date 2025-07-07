@@ -1,0 +1,131 @@
+.inter-footer {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+/* Le body occupe toute la hauteur et place le footer en bas */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Forcer le footer en bas si pas de contenu */
+body {
+    min-height: 100vh;
+    background-color: #141414;
+}
+
+/* Footer aligné à gauche avec un décalage vers la droite */
+.footer {
+    background-color: #141414;
+    color: #fff;
+    padding: 30px 10px;
+    margin-top: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 600px;
+
+}
+
+/* Icônes sociales avec un petit espacement horizontal */
+.social-icons {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #b91c1c;
+    transform: scale(1.2);
+}
+
+.facebook {
+    width: 15;
+    height: 24;
+    opacity: 1;
+    top: 1333px;
+    left: 438px;
+
+}
+
+.instagram {
+    width: 30;
+    height: 34.28571319580078;
+    opacity: 1;
+    top: 1328px;
+    left: 481px;
+
+}
+
+.twitter {
+    width: 35;
+    height: 35;
+    opacity: 1;
+    top: 1325px;
+    left: 541px;
+
+}
+
+.youtube {
+    width: 35;
+    height: 31.11111068725586;
+    opacity: 1;
+    top: 1329px;
+    left: 594px;
+
+}
+
+
+/* Texte du footer */
+footer p {
+    font-size: 14px;
+    color: #808080;
+    margin: 0;
+    width: 492;
+    height: 18;
+    opacity: 1;
+    top: 1390px;
+    left: 435px;
+    font-family: inter;
+    font-weight: 400;
+    font-style: regular;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+
+}
+
+/* Responsive : pour les petits écrans , centrer le contenu, enlever le décalage à gauche, centrer les icônes*/
+@media (max-width: 600px) {
+    .footer {
+        align-items: center;
+        padding-left: 0;
+        text-align: center;
+
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
