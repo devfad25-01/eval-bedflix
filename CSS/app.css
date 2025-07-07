@@ -3,3 +3,8 @@
     --secondary-color: #f5f5f5; 
     --tertiary-color: #000000;
 }
+
+@font-face {
+        font-family: Inter;
+        src: url(../Fonts/Inter/Inter-VariableFont_opsz\,wght.ttf) format('truetype')  ;
+    }
