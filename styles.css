@@ -1,0 +1,120 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+body h2 {
+    font-size: 4rem;
+}
+
+body h3 {
+    font-size: 2rem;
+}
+
+body p {
+    font-size: 1.5rem;
+}
+
+@font-face {
+        font-family: Inter;
+        src: url(./Fonts/Inter-VariableFont_opsz\,wght.ttf) format('truetype');
+    }
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    max-height: 118px;
+    justify-content: space-between;
+    
+}
+
+.logo-navbar {
+    display: flex;
+    align-items: center;
+}
+
+div.logo {
+}
+
+.logo img {
+    height: 82px;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 50px;
+}
+
+.navbar ul li {
+    list-style: none;
+    font-size: 30px;
+}
+
+.searchbar {
+    width: 373px;
+    height: 58px;
+}
+
+.searchbar input {
+    padding-left: 30px;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    border: solid 1px rgb(255, 255, 255);
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    background-image: url(./pictures/icons/magnifying-glass-solid.svg);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 8%;
+}
+
+.search-contact {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.bell-notification {
+    width: 35px;
+    height: 40px;
+}
+
+div.user-icon {
+    display: flex;
+    justify-content: end;
+
+}
+
+/* MAIN CONTENT */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.bloc-1 {
+    background-image: url(./pictures/affiches/en_avant.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 790px;
+    padding: 50px 50px;
+}
+
+.en_avant_text {
+    max-width: 50%;
+}
+
+.logo-text {   
+    display: flex;
+}
+
+.logo-text p {
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 20%;
+    font-family: Inter;
+}
