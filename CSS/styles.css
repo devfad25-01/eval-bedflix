@@ -1,7 +1,6 @@
 body{
-    background-color: black;
+    background-color: var(--tertiary-color);
     color: white;
-    max-width: 1440px;
 }
 
 h2 {
@@ -68,7 +67,7 @@ div.logo {
     background-color: black;
     color: white;
     font-size: 20px;
-    background-image: url(./pictures/icons/magnifying-glass-solid.svg);
+    background-image: url(../pictures/icons/magnifying-glass-solid.svg);
     background-size: 30px;
     background-position: 3% center;
     background-repeat: no-repeat;
@@ -99,8 +98,8 @@ main {
 }
 
 .bloc-1 {
-    background-image: url(./pictures/affiches/en_avant.png);
-    width: 100vh;
+    background-image: url(../pictures/affiches/en_avant.png);
+
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px 100px;
