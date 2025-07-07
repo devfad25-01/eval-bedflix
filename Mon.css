@@ -1,0 +1,44 @@
+.rectangle-film {
+    position: absolute;
+    height: 790px;
+    top: 117px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif,' Arial semi-bold';
+    letter-spacing: 20%;
+}
+.px{
+    font-size: 35px;
+    text-shadow: 1px 1px black ;
+}
+/*.affiche-film{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 1)10%), url(/img/Rectangle\ 4.png)
+}*/
+.menu-deroulant-film{
+    position: absolute;
+    top: 29px;
+    left: 76px;
+    display: flex;
+    flex-direction: row;
+}
+.bedflix-dessus-film{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 180px;
+    left: 86px;
+}
+#liste{
+    width: 111px;
+    height: 40px;
+    top: 20px;
+    left: 217px;
+    color: white;
+    border: solid white 3px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: rgba(0,0, 0, 99%);
+}
+select option{
+    background-color: black;
+}
